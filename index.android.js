@@ -2,12 +2,12 @@
 
 //Import a library to help create a component
 import React from 'react';
-import ReactNative from 'reactNative';
+import {Text, AppRegistry} from 'reactNative';
 
-//Create a component
-const App = () => {
-  return (
-    <Text>Some Text</Text>
-  );
-};
+
+//Create a component-- a javascript function that returns jsx
+const App = () => (
+  <Text>Some Text</Text>
+);
 //Render component to the device
+AppRegistry.registerComponent('albums', () => App);
