@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
-import axios from 'axios';
 
 class AlbumList extends Component{
   state= {
@@ -8,15 +7,15 @@ class AlbumList extends Component{
   };
 
   componentWillMount(){
+    console.log('Componenet will mount')
+
     fetch('https://rallycoding.herokuapp.com/api/music_albums')
-    .then((response)=> response.json())
-    .then((responseData)=> {
-      console.log(responseData);
-    });
+      .then((response)=> response.json())
+      .then((data)=> this.setState({albums: data}));
   }
 
   render(){
-
+console.log(this.state.albums);
     return (
       <View>
         <Text>Heyooo</Text>
