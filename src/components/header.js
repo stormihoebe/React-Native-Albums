@@ -15,10 +15,20 @@ const styles = {
   viewStyle: {
     backgroundColor: '#f2f2f2',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 60,
+    shadowColor: '#000',
+    shadowOffset: {width:0, height:2},
+    shadowOpacity: 0.3,
+    elevation: 2,
+    position: 'relative'
+
+
+
+
   },
   textStyle: {
-    fontSize: 60
+    fontSize: 30
   }
 
 }
