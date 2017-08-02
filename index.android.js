@@ -9,5 +9,7 @@ import Header from './src/components/header';
 const App = () => (
     <Header />
 );
+
+
 //Render component to the device
 AppRegistry.registerComponent('albums', () => App);
