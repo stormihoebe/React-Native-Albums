@@ -7,7 +7,7 @@ import Header from './src/components/header';
 
 //Create a component-- a javascript function that returns jsx
 const App = () => (
-    <Header />
+    <Header headerText={"Albums"}/>
 );
 
 
