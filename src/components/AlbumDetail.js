@@ -21,7 +21,7 @@ const AlbumDetail = ({album}) => {
         <Image style={styles.imageStyle} source={{uri: image}}></Image>
       </CardSection>
       <CardSection>
-        <Button/>
+        <Button onPressProp={()=>console.log(title)}/>
       </CardSection>
     </Card>
   );

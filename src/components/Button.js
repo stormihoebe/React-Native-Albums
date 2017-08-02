@@ -3,10 +3,10 @@ import React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 
 //create the component
-const Button = () => {
+const Button = ({onPressProp}) => {
 
   return (
-    <TouchableOpacity style={styles.buttonStyle}>
+    <TouchableOpacity onPress={onPressProp} style={styles.buttonStyle}>
       <Text style={styles.textStyle}>Click</Text>
     </TouchableOpacity>
   );
